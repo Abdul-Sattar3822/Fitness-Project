@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - ABRO FiTNESS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+             background: url('img/ind.jpg') no-repeat center center/cover; background-position: center;
+           
+            
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .navbar {
+            background: red;
+            padding: 5px;
+            text-align: left;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .navbar a:hover {
+            background: darkred;
+            border-radius: 5px;
+        }
+        .form-container {
+            width: 40%;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            color: black;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: darkred;
+        }
+    </style>
+    <script>
+        function goBack() {
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                window.location.replace('index.html');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a onclick="goBack()">⬅  <b>Back</b> </a>
+    </div>
+    <h2><b>Register for FiTNESS PROJECT</b> </h2>
+    <div class="form-container">
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label for="eligibility">Eligibility</label>
+            <select id="eligibility" name="eligibility" required>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+
+            <button type="submit">Register</button>
+            <button type="reset">Clear All</button>
+        </form>
+    </div>
+</body>
+</html>

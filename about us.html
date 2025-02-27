@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <style>
+        body{
+         background: url('img/about.jpg') no-repeat center center/cover; background-position: top 15px center;
+        }
+
+    
+        .about {
+            text-align: center;
+            color: white;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 60px;
+            margin-top: 60px;
+            line-height: 3.2;
+            border-radius: 10px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 20px;
+        }
+        .about h2 {
+            font-size: 30px;
+         }
+        .about ul {
+            text-align: left;
+            display: inline-block;
+            margin: auto;
+            padding-left: 50px;
+        }
+        .about p {
+            margin-bottom: 30px;
+         }
+
+         .navbar {
+            background: red;
+            padding: 5px;
+            text-align: left;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .navbar a:hover {
+            background: darkred;
+            border-radius: 5px;
+        }
+        .form-container {
+            width: 40%;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            color: black;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: darkred;
+        }
+ </style>
+ <script>
+    function goBack() {
+        if (window.history.length > 1) {
+            window.history.back();
+        } else {
+            window.location.replace('index.html');
+        }
+    }
+</script>
+</head>
+<body>
+    <div class="navbar">
+        <a onclick="goBack()">⬅ <b>Back</b> </a>
+    </div>
+    <div id="about" class="about">
+        <h2>About Us</h2>
+        <p>ABRO FITNESS Ek Modern Aur Well-Equipped Gym Hai Jo Aapki <strong>Fitness Journey</strong> Ko Next Level Par Le Jane Ke Liye Design Kiya Gaya Hai. Hum Yahan Sirf <strong>Exercise</strong> Nahi Karate, Balki Ek <strong>Healthy Lifestyle</strong> Banane Mein Madad Dete Hain.</p>
+        <ul>
+            <li><strong>State-Of-The-Art Equipment:</strong> Humare Gym Mein <strong>Latest Fitness Machines</strong> Aur Training Tools Mojood Hain Jo Aapko <strong>Best Workout Experience</strong> Dete Hain.</li>
+            <li><strong>Professional Trainers:</strong> Humare Highly Skilled <strong>Male [&] Female Trainers</strong> Aapko <strong>Personalized Workout Plans</strong> Aur <strong>Diet Guidance</strong> Dete Hain.</li>
+            <li><strong>Friendly [&] Motivating Environment:</strong> Aapko Ek <strong>Supportive Aur Energetic</strong> Environment Milega Jo Aapko <strong>Consistency</strong> Maintain Karne Mein Madad Karega.</li>
+            <li><strong>Flexible Membership Plans:</strong> Har Kisi Ke Liye <strong>Affordable</strong> Aur <strong>Customized</strong> Plans Available Hain, Chahe Aap Beginner Ho Ya Advanced Fitness Enthusiast.</li>
+            <li><strong>Hygiene [&] Cleanliness:</strong> Hum <strong>Gym Ki Safai Aur Hygiene</strong> Ka Khaas Khayal Rakhte Hain, Taake Aap Ek <strong>Safe Aur Refreshing Environment</strong> Mein Workout Kar Sakein.</li>
+        </ul>
+        <p>ABRO FITNESS Sirf Ek Gym Nahi, <strong>Ek Community Hai Jo Aapko Fit Aur Healthy Banane Ke Liye Dedicated Hai!</strong> 💪🔥</p>
+        <p><strong>Contact:</strong> A.S ABRO</p>
+        <p><strong>Phone:</strong> 03090905913</p>
+    </div>
+</body>
+</html>
